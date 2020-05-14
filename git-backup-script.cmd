@@ -35,4 +35,7 @@ echo Compressing Folder for backup
 echo Moving compressed backup to target directory
 xcopy "%BK_DIRECTORY%\backup_%ISO_DATE%.7z" "%BK_TARGET_DIRECTORY%" /c /i /y
 
+REM Comment the next line in to cleanup behind execution.
+REM rmdir /s /q %BK_DIRECTORY%
+
 echo Finished backup

@@ -28,5 +28,7 @@ Das Skript muss mit einigen Parameter konfiguriert werden:
 |GITHUB_URL    |Die HTTPS-URL. Kann User-Name und Passwort enthalten falls Autorisierung notwendig.
 |WORKING_DIRECTORY     |Das Verzeichnis in dem das Skript das Git-Projekt auschecken soll.
 |BK_TARGET_DIRECTORY    |Das Verzeichnis in das die Backups kopiert werden sollen
+|GITHUB_PROJECT_NAME    |Der Name des Verzeichnisses das bei einem `git clone`erstellt wird.
 |=======================
 
+Das Skript räumt nicht hinter sich her. Falls es gewünscht ist, dass das Verzeichnis gelöscht wird kann die entsprechende Zeile im Batch-Skript auskommentiert werden.
