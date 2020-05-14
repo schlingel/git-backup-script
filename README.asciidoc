@@ -1,5 +1,5 @@
 Windows Git Backup-Skript
-=====================
+=========================
 :author: Martin Keiblinger
 :lang: de
 
