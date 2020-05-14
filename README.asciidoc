@@ -1,0 +1,32 @@
+Windows Git Backup-Skript
+=====================
+:author: Martin Keiblinger
+:lang: de
+
+Sinn dieses Backup-Skripts ist es beliebige Git-Repositories per Batch-Skript auszuchecken, per 7zip zu komprimieren und dann in einen beliebigen Ordner zu kopieren.
+
+## Installation
+
+Für das Verwenden des Skripts sind folgende Abhängigkeiten zu installieren:
+
+1. https://git-scm.com/download/win[Git]
+2. https://www.7-zip.de/[7Zip]
+
+Danach das Batch-File kopieren und an einen beliebigen Ort kopieren. 
+
+## Konfiguration
+
+Das Skript muss mit einigen Parameter konfiguriert werden:
+
+.Parameter
+[options="header"]
+|=======================
+|Name|Beschreibung      
+|SZIP_PATH    |Zeigt auf das Installationsverzeichnis von _7zip_.    
+|GITHUB_USER    |User-Name _(wird nur benötigt wenn Authorisierung notwendig)_     
+|GITHUB_PWD    |Passwort _(wird nur benötigt wenn Autorisierung notwendig)_     
+|GITHUB_URL    |Die HTTPS-URL. Kann User-Name und Passwort enthalten falls Autorisierung notwendig.
+|WORKING_DIRECTORY     |Das Verzeichnis in dem das Skript das Git-Projekt auschecken soll.
+|BK_TARGET_DIRECTORY    |Das Verzeichnis in das die Backups kopiert werden sollen
+|=======================
+
